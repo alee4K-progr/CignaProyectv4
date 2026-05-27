@@ -1,0 +1,158 @@
+databaseChangeLog:
+  - changeSet:
+      id: 1-crear-tabla-usuarios
+      author: cigna
+      changes:
+        - createTable:
+            tableName: usuarios
+            columns:
+              - column:
+                  name: id
+                  type: BIGINT
+                  autoIncrement: true
+                  constraints:
+                    primaryKey: true
+                    nullable: false
+              - column:
+                  name: run
+                  type: VARCHAR(12)
+                  constraints:
+                    nullable: false
+                    unique: true
+              - column:
+                  name: nombre
+                  type: VARCHAR(100)
+                  constraints:
+                    nullable: false
+              - column:
+                  name: apellido
+                  type: VARCHAR(100)
+                  constraints:
+                    nullable: false
+              - column:
+                  name: correo
+                  type: VARCHAR(150)
+                  constraints:
+                    nullable: false
+                    unique: true
+              - column:
+                  name: password
+                  type: VARCHAR(255)
+                  constraints:
+                    nullable: false
+              - column:
+                  name: rol
+                  type: VARCHAR(50)
+                  constraints:
+                    nullable: false
+              - column:
+                  name: activo
+                  type: BOOLEAN
+                  defaultValueBoolean: true
+                  constraints:
+                    nullable: false
+
+  - changeSet:
+      id: 2-insertar-usuarios
+      author: cigna
+      changes:
+        - insert:
+            tableName: usuarios
+            columns:
+              - column: {name: run, value: "12345678-9"}
+              - column: {name: nombre, value: "Juan"}
+              - column: {name: apellido, value: "Pérez"}
+              - column: {name: correo, value: "juan.perez@cigna.cl"}
+              - column: {name: password, value: "pass123"}
+              - column: {name: rol, value: "PACIENTE"}
+              - column: {name: activo, valueBoolean: true}
+        - insert:
+            tableName: usuarios
+            columns:
+              - column: {name: run, value: "23456789-0"}
+              - column: {name: nombre, value: "María"}
+              - column: {name: apellido, value: "González"}
+              - column: {name: correo, value: "maria.gonzalez@cigna.cl"}
+              - column: {name: password, value: "pass123"}
+              - column: {name: rol, value: "PACIENTE"}
+              - column: {name: activo, valueBoolean: true}
+        - insert:
+            tableName: usuarios
+            columns:
+              - column: {name: run, value: "34567890-1"}
+              - column: {name: nombre, value: "Carlos"}
+              - column: {name: apellido, value: "López"}
+              - column: {name: correo, value: "carlos.lopez@cigna.cl"}
+              - column: {name: password, value: "pass123"}
+              - column: {name: rol, value: "MEDICO"}
+              - column: {name: activo, valueBoolean: true}
+        - insert:
+            tableName: usuarios
+            columns:
+              - column: {name: run, value: "45678901-2"}
+              - column: {name: nombre, value: "Ana"}
+              - column: {name: apellido, value: "Martínez"}
+              - column: {name: correo, value: "ana.martinez@cigna.cl"}
+              - column: {name: password, value: "pass123"}
+              - column: {name: rol, value: "MEDICO"}
+              - column: {name: activo, valueBoolean: true}
+        - insert:
+            tableName: usuarios
+            columns:
+              - column: {name: run, value: "56789012-3"}
+              - column: {name: nombre, value: "Pedro"}
+              - column: {name: apellido, value: "Sánchez"}
+              - column: {name: correo, value: "pedro.sanchez@cigna.cl"}
+              - column: {name: password, value: "pass123"}
+              - column: {name: rol, value: "PACIENTE"}
+              - column: {name: activo, valueBoolean: true}
+        - insert:
+            tableName: usuarios
+            columns:
+              - column: {name: run, value: "67890123-4"}
+              - column: {name: nombre, value: "Laura"}
+              - column: {name: apellido, value: "Rodríguez"}
+              - column: {name: correo, value: "laura.rodriguez@cigna.cl"}
+              - column: {name: password, value: "pass123"}
+              - column: {name: rol, value: "ADMIN"}
+              - column: {name: activo, valueBoolean: true}
+        - insert:
+            tableName: usuarios
+            columns:
+              - column: {name: run, value: "78901234-5"}
+              - column: {name: nombre, value: "Diego"}
+              - column: {name: apellido, value: "Fernández"}
+              - column: {name: correo, value: "diego.fernandez@cigna.cl"}
+              - column: {name: password, value: "pass123"}
+              - column: {name: rol, value: "PACIENTE"}
+              - column: {name: activo, valueBoolean: true}
+        - insert:
+            tableName: usuarios
+            columns:
+              - column: {name: run, value: "89012345-6"}
+              - column: {name: nombre, value: "Sofía"}
+              - column: {name: apellido, value: "Torres"}
+              - column: {name: correo, value: "sofia.torres@cigna.cl"}
+              - column: {name: password, value: "pass123"}
+              - column: {name: rol, value: "PACIENTE"}
+              - column: {name: activo, valueBoolean: true}
+        - insert:
+            tableName: usuarios
+            columns:
+              - column: {name: run, value: "90123456-7"}
+              - column: {name: nombre, value: "Andrés"}
+              - column: {name: apellido, value: "Morales"}
+              - column: {name: correo, value: "andres.morales@cigna.cl"}
+              - column: {name: password, value: "pass123"}
+              - column: {name: rol, value: "MEDICO"}
+              - column: {name: activo, valueBoolean: true}
+        - insert:
+            tableName: usuarios
+            columns:
+              - column: {name: run, value: "01234567-8"}
+              - column: {name: nombre, value: "Valentina"}
+              - column: {name: apellido, value: "Herrera"}
+              - column: {name: correo, value: "valentina.herrera@cigna.cl"}
+              - column: {name: password, value: "pass123"}
+              - column: {name: rol, value: "PACIENTE"}
+              - column: {name: activo, valueBoolean: true}

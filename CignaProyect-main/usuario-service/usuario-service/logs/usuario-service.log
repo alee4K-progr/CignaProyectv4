@@ -1,0 +1,3 @@
+2026-05-27 00:42:48 [main] INFO  c.c.u.UsuarioServiceApplication - Starting UsuarioServiceApplication using Java 21.0.2 with PID 16888 (C:\Users\Alexander\OneDrive\Escritorio\CignaProyect-final-v4\CignaProyect-main\usuario-service\usuario-service\target\classes started by Alexander in C:\Users\Alexander\OneDrive\Escritorio\CignaProyect-final-v4\CignaProyect-main\usuario-service\usuario-service)
+2026-05-27 00:42:48 [main] DEBUG c.c.u.UsuarioServiceApplication - Running with Spring Boot v4.0.6, Spring v7.0.7
+2026-05-27 00:42:48 [main] INFO  c.c.u.UsuarioServiceApplication - No active profile set, falling back to 1 default profile: "default"

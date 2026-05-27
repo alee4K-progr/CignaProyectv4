@@ -1,0 +1,24 @@
+spring:
+  application:
+    name: agenda-service
+  datasource:
+    url: jdbc:mysql://localhost:3306/cigna_agendas?createDatabaseIfNotExist=true&useSSL=false&allowPublicKeyRetrieval=true&serverTimezone=America/Santiago
+    username: root
+    password: ""
+    driver-class-name: com.mysql.cj.jdbc.Driver
+  jpa:
+    hibernate:
+      ddl-auto: none
+    show-sql: true
+    properties:
+      hibernate:
+        format_sql: true
+  liquibase:
+    enabled: false
+
+server:
+  port: 8084
+
+api:
+  gateway:
+    url: http://localhost:8080

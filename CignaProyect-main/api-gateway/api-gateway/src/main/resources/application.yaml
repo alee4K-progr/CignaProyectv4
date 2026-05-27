@@ -1,5 +1,5 @@
 server:
-  port: 8080
+  port: 8089
 
 spring:
   application:
@@ -10,7 +10,7 @@ spring:
         webmvc:
           routes:
             - id: usuario-service
-              uri: http://localhost:8081
+              uri: http://localhost:8087
               predicates:
                 - Path=/api/usuarios, /api/usuarios/**
 

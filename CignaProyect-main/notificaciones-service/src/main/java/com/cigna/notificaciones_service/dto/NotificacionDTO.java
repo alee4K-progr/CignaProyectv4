@@ -1,6 +1,6 @@
-package com.example.notificaciones_service.dto;
+package com.cigna.notificaciones_service.dto;
 
-import com.example.notificaciones_service.model.Notificacion;
+import com.cigna.notificaciones_service.model.Notificacion;
 import com.fasterxml.jackson.annotation.JsonProperty;
 import io.swagger.v3.oas.annotations.media.Schema;
 import jakarta.validation.constraints.NotBlank;

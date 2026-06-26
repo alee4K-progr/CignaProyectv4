@@ -1,9 +1,9 @@
-package com.example.historial_service.service;
+package com.cigna.historial_service.service;
 
-import com.example.historial_service.exception.BadRequestException;
-import com.example.historial_service.exception.ResourceNotFoundException;
-import com.example.historial_service.model.HistorialClinico;
-import com.example.historial_service.repository.HistorialClinicoRepository;
+import com.cigna.historial_service.exception.BadRequestException;
+import com.cigna.historial_service.exception.ResourceNotFoundException;
+import com.cigna.historial_service.model.HistorialClinico;
+import com.cigna.historial_service.repository.HistorialClinicoRepository;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import org.springframework.beans.factory.annotation.Value;

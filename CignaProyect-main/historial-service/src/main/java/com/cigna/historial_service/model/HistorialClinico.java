@@ -1,4 +1,4 @@
-package com.example.historial_service.model;
+package com.cigna.historial_service.model;
 
 import jakarta.persistence.*;
 import jakarta.validation.constraints.NotBlank;

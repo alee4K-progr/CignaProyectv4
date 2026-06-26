@@ -1,8 +1,8 @@
-package com.example.historial_service.controller;
+package com.cigna.historial_service.controller;
 
-import com.example.historial_service.dto.HistorialClinicoDTO;
-import com.example.historial_service.model.HistorialClinico;
-import com.example.historial_service.service.HistorialClinicoService;
+import com.cigna.historial_service.dto.HistorialClinicoDTO;
+import com.cigna.historial_service.model.HistorialClinico;
+import com.cigna.historial_service.service.HistorialClinicoService;
 import io.swagger.v3.oas.annotations.Operation;
 import io.swagger.v3.oas.annotations.tags.Tag;
 import jakarta.validation.Valid;

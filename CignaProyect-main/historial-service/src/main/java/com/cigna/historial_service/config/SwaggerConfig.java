@@ -1,4 +1,4 @@
-package com.example.historial_service.config;
+package com.cigna.historial_service.config;
 
 import io.swagger.v3.oas.models.Components;
 import io.swagger.v3.oas.models.OpenAPI;

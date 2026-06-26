@@ -1,4 +1,4 @@
-package com.example.historial_service.exception;
+package com.cigna.historial_service.exception;
 
 import lombok.Builder;
 import lombok.Data;

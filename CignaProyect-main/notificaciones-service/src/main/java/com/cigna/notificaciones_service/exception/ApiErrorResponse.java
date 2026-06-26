@@ -1,4 +1,4 @@
-package com.example.notificaciones_service.exception;
+package com.cigna.notificaciones_service.exception;
 import lombok.Builder;
 import lombok.Data;
 import java.time.OffsetDateTime;

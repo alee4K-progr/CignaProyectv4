@@ -1,6 +1,6 @@
-package com.example.historial_service.repository;
+package com.cigna.historial_service.repository;
 
-import com.example.historial_service.model.HistorialClinico;
+import com.cigna.historial_service.model.HistorialClinico;
 import org.springframework.data.jpa.repository.JpaRepository;
 import org.springframework.stereotype.Repository;
 import java.util.List;

@@ -1,8 +1,8 @@
-package com.example.notificaciones_service.service;
+package com.cigna.notificaciones_service.service;
 
-import com.example.notificaciones_service.exception.ResourceNotFoundException;
-import com.example.notificaciones_service.model.Notificacion;
-import com.example.notificaciones_service.repository.NotificacionRepository;
+import com.cigna.notificaciones_service.exception.ResourceNotFoundException;
+import com.cigna.notificaciones_service.model.Notificacion;
+import com.cigna.notificaciones_service.repository.NotificacionRepository;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import org.springframework.stereotype.Service;

@@ -1,7 +1,7 @@
-package com.example.historial_service;
+package com.cigna.historial_service;
 
-import com.example.historial_service.model.HistorialClinico;
-import com.example.historial_service.repository.HistorialClinicoRepository;
+import com.cigna.historial_service.model.HistorialClinico;
+import com.cigna.historial_service.repository.HistorialClinicoRepository;
 import net.datafaker.Faker;
 import org.springframework.boot.CommandLineRunner;
 import org.springframework.stereotype.Component;

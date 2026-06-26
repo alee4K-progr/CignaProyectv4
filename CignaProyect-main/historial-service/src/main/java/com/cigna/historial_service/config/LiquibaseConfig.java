@@ -1,4 +1,4 @@
-package com.example.historial_service.config;
+package com.cigna.historial_service.config;
 
 import liquibase.integration.spring.SpringLiquibase;
 import org.springframework.context.annotation.Bean;

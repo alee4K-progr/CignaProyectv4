@@ -1,7 +1,7 @@
-package com.example.notificaciones_service;
+package com.cigna.notificaciones_service;
 
-import com.example.notificaciones_service.model.Notificacion;
-import com.example.notificaciones_service.repository.NotificacionRepository;
+import com.cigna.notificaciones_service.model.Notificacion;
+import com.cigna.notificaciones_service.repository.NotificacionRepository;
 import net.datafaker.Faker;
 import org.springframework.boot.CommandLineRunner;
 import org.springframework.stereotype.Component;

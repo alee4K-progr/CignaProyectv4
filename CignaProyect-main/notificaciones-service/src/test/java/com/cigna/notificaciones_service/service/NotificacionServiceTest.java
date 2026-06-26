@@ -1,12 +1,12 @@
-package com.example.notificaciones_service.service;
+package com.cigna.notificaciones_service.service;
 
 import static org.junit.jupiter.api.Assertions.*;
 import static org.mockito.ArgumentMatchers.*;
 import static org.mockito.Mockito.*;
 
-import com.example.notificaciones_service.exception.ResourceNotFoundException;
-import com.example.notificaciones_service.model.Notificacion;
-import com.example.notificaciones_service.repository.NotificacionRepository;
+import com.cigna.notificaciones_service.exception.ResourceNotFoundException;
+import com.cigna.notificaciones_service.model.Notificacion;
+import com.cigna.notificaciones_service.repository.NotificacionRepository;
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.DisplayName;
 import org.junit.jupiter.api.Test;

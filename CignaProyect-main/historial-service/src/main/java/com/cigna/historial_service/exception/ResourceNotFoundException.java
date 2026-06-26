@@ -1,4 +1,4 @@
-package com.example.historial_service.exception;
+package com.cigna.historial_service.exception;
 
 public class ResourceNotFoundException extends RuntimeException {
     public ResourceNotFoundException(String message) {

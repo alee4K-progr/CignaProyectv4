@@ -1,8 +1,8 @@
-package com.example.notificaciones_service.assemblers;
+package com.cigna.notificaciones_service.assemblers;
 
 import static org.springframework.hateoas.server.mvc.WebMvcLinkBuilder.*;
-import com.example.notificaciones_service.controller.NotificacionControllerV2;
-import com.example.notificaciones_service.model.Notificacion;
+import com.cigna.notificaciones_service.controller.NotificacionControllerV2;
+import com.cigna.notificaciones_service.model.Notificacion;
 import org.springframework.hateoas.EntityModel;
 import org.springframework.hateoas.server.RepresentationModelAssembler;
 import org.springframework.stereotype.Component;

@@ -1,4 +1,4 @@
-package com.example.notificaciones_service.config;
+package com.cigna.notificaciones_service.config;
 import liquibase.integration.spring.SpringLiquibase;
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;

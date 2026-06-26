@@ -1,4 +1,4 @@
-package com.example.historial_service.config;
+package com.cigna.historial_service.config;
 
 import org.springframework.beans.factory.annotation.Value;
 import org.springframework.context.annotation.Bean;

@@ -1,4 +1,4 @@
-package com.example.notificaciones_service.model;
+package com.cigna.notificaciones_service.model;
 
 import jakarta.persistence.*;
 import jakarta.validation.constraints.*;

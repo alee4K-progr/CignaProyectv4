@@ -1,4 +1,4 @@
-package com.example.notificaciones_service.exception;
+package com.cigna.notificaciones_service.exception;
 import jakarta.servlet.http.HttpServletRequest;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;

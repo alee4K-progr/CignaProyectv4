@@ -1,4 +1,4 @@
-package com.example.notificaciones_service;
+package com.cigna.notificaciones_service;
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 

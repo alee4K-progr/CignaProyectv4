@@ -1,6 +1,6 @@
-package com.example.historial_service.dto;
+package com.cigna.historial_service.dto;
 
-import com.example.historial_service.model.HistorialClinico;
+import com.cigna.historial_service.model.HistorialClinico;
 import com.fasterxml.jackson.annotation.JsonProperty;
 import jakarta.validation.constraints.NotBlank;
 import jakarta.validation.constraints.NotNull;

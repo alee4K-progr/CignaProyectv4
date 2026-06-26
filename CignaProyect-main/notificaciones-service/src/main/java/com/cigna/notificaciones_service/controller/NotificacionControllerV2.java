@@ -1,8 +1,8 @@
-package com.example.notificaciones_service.controller;
+package com.cigna.notificaciones_service.controller;
 
-import com.example.notificaciones_service.assemblers.NotificacionModelAssembler;
-import com.example.notificaciones_service.model.Notificacion;
-import com.example.notificaciones_service.service.NotificacionService;
+import com.cigna.notificaciones_service.assemblers.NotificacionModelAssembler;
+import com.cigna.notificaciones_service.model.Notificacion;
+import com.cigna.notificaciones_service.service.NotificacionService;
 import io.swagger.v3.oas.annotations.Operation;
 import io.swagger.v3.oas.annotations.tags.Tag;
 import org.slf4j.Logger;

@@ -1,12 +1,12 @@
-package com.example.notificaciones_service.controller;
+package com.cigna.notificaciones_service.controller;
 
 import static org.mockito.ArgumentMatchers.*;
 import static org.mockito.Mockito.*;
 import static org.springframework.test.web.servlet.request.MockMvcRequestBuilders.*;
 import static org.springframework.test.web.servlet.result.MockMvcResultMatchers.*;
 
-import com.example.notificaciones_service.dto.NotificacionDTO;
-import com.example.notificaciones_service.service.NotificacionService;
+import com.cigna.notificaciones_service.dto.NotificacionDTO;
+import com.cigna.notificaciones_service.service.NotificacionService;
 import com.fasterxml.jackson.databind.ObjectMapper;
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.DisplayName;
@@ -18,7 +18,7 @@ import org.mockito.junit.jupiter.MockitoExtension;
 import org.springframework.http.MediaType;
 import org.springframework.test.web.servlet.MockMvc;
 import org.springframework.test.web.servlet.setup.MockMvcBuilders;
-import com.example.notificaciones_service.model.Notificacion;
+import com.cigna.notificaciones_service.model.Notificacion;
 
 import java.util.List;
 

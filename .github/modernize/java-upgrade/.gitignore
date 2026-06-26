@@ -1,0 +1,29 @@
+# Maven
+target/
+
+# Logs
+logs/
+*.log
+
+# Spring Boot
+*.log.*
+
+# IntelliJ IDEA
+.idea/
+*.iml
+
+# VS Code
+.vscode/
+
+# Eclipse
+.project
+.classpath
+.settings/
+
+# Variables de entorno
+.env
+.env.*
+
+# Archivos del sistema
+.DS_Store
+Thumbs.db

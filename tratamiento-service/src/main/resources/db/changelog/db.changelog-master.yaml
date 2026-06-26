@@ -1,0 +1,107 @@
+databaseChangeLog:
+  - changeSet:
+      id: 1-crear-tabla-tratamiento
+      author: cigna
+      changes:
+        - createTable:
+            tableName: tratamiento
+            columns:
+              - column:
+                  name: id_tratamiento
+                  type: BIGINT
+                  autoIncrement: true
+                  constraints:
+                    primaryKey: true
+                    nullable: false
+              - column:
+                  name: nombre
+                  type: VARCHAR(150)
+                  constraints:
+                    nullable: false
+              - column:
+                  name: descripcion
+                  type: VARCHAR(1000)
+              - column:
+                  name: duracion_dias
+                  type: INT
+              - column:
+                  name: activo
+                  type: BOOLEAN
+                  defaultValueBoolean: true
+                  constraints:
+                    nullable: false
+
+  - changeSet:
+      id: 2-insertar-tratamientos
+      author: cigna
+      changes:
+        - insert:
+            tableName: tratamiento
+            columns:
+              - column: {name: nombre, value: "Tratamiento Hipertensión"}
+              - column: {name: descripcion, value: "Control y medicación para hipertensión arterial"}
+              - column: {name: duracion_dias, valueNumeric: 90}
+              - column: {name: activo, valueBoolean: true}
+        - insert:
+            tableName: tratamiento
+            columns:
+              - column: {name: nombre, value: "Rehabilitación Cardíaca"}
+              - column: {name: descripcion, value: "Programa de rehabilitación post infarto"}
+              - column: {name: duracion_dias, valueNumeric: 60}
+              - column: {name: activo, valueBoolean: true}
+        - insert:
+            tableName: tratamiento
+            columns:
+              - column: {name: nombre, value: "Fisioterapia Lumbar"}
+              - column: {name: descripcion, value: "Tratamiento fisioterapéutico para dolor lumbar"}
+              - column: {name: duracion_dias, valueNumeric: 30}
+              - column: {name: activo, valueBoolean: true}
+        - insert:
+            tableName: tratamiento
+            columns:
+              - column: {name: nombre, value: "Control Diabetes"}
+              - column: {name: descripcion, value: "Seguimiento y control de diabetes tipo 2"}
+              - column: {name: duracion_dias, valueNumeric: 180}
+              - column: {name: activo, valueBoolean: true}
+        - insert:
+            tableName: tratamiento
+            columns:
+              - column: {name: nombre, value: "Psicoterapia Cognitiva"}
+              - column: {name: descripcion, value: "Terapia cognitivo-conductual para trastornos de ansiedad"}
+              - column: {name: duracion_dias, valueNumeric: 120}
+              - column: {name: activo, valueBoolean: true}
+        - insert:
+            tableName: tratamiento
+            columns:
+              - column: {name: nombre, value: "Quimioterapia Ciclo 1"}
+              - column: {name: descripcion, value: "Primer ciclo de quimioterapia estándar"}
+              - column: {name: duracion_dias, valueNumeric: 21}
+              - column: {name: activo, valueBoolean: true}
+        - insert:
+            tableName: tratamiento
+            columns:
+              - column: {name: nombre, value: "Tratamiento Acné"}
+              - column: {name: descripcion, value: "Tratamiento dermatológico para acné severo"}
+              - column: {name: duracion_dias, valueNumeric: 90}
+              - column: {name: activo, valueBoolean: true}
+        - insert:
+            tableName: tratamiento
+            columns:
+              - column: {name: nombre, value: "Vacunación Influenza"}
+              - column: {name: descripcion, value: "Programa anual de vacunación contra influenza"}
+              - column: {name: duracion_dias, valueNumeric: 1}
+              - column: {name: activo, valueBoolean: true}
+        - insert:
+            tableName: tratamiento
+            columns:
+              - column: {name: nombre, value: "Control Colesterol"}
+              - column: {name: descripcion, value: "Seguimiento y tratamiento de hipercolesterolemia"}
+              - column: {name: duracion_dias, valueNumeric: 90}
+              - column: {name: activo, valueBoolean: true}
+        - insert:
+            tableName: tratamiento
+            columns:
+              - column: {name: nombre, value: "Terapia Respiratoria"}
+              - column: {name: descripcion, value: "Tratamiento para enfermedades respiratorias crónicas"}
+              - column: {name: duracion_dias, valueNumeric: 60}
+              - column: {name: activo, valueBoolean: true}

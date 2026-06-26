@@ -1,4 +1,4 @@
-package com.example.auth.config;
+package com.cigna.auth.config;
 
 import io.swagger.v3.oas.models.OpenAPI;
 import io.swagger.v3.oas.models.info.Info;

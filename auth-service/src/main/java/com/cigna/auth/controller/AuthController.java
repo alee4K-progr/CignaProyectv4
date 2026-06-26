@@ -1,4 +1,4 @@
-package com.example.auth.controller;
+package com.cigna.auth.controller;
 
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.PostMapping;

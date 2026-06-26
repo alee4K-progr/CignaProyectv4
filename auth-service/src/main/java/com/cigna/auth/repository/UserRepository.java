@@ -1,8 +1,8 @@
-package com.example.auth.repository;
+package com.cigna.auth.repository;
 
 import org.springframework.data.jpa.repository.JpaRepository;
 import org.springframework.stereotype.Repository;
-import com.example.auth.model.User;
+import com.cigna.auth.model.User;
 
 @Repository
 public interface UserRepository extends JpaRepository<User, Long>{

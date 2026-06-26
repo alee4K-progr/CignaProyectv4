@@ -1,4 +1,4 @@
-package com.example.auth.model;
+package com.cigna.auth.model;
 
 import jakarta.persistence.*;
 import lombok.*;

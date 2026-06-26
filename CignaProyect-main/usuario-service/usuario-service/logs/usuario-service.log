@@ -71,3 +71,139 @@
 2026-05-27 00:43:54 [http-nio-8081-exec-1] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring DispatcherServlet 'dispatcherServlet'
 2026-05-27 00:43:54 [http-nio-8081-exec-1] INFO  o.s.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
 2026-05-27 00:43:54 [http-nio-8081-exec-1] INFO  o.s.web.servlet.DispatcherServlet - Completed initialization in 4 ms
+2026-05-27 00:48:01 [AsyncResolver-bootstrap-executor-%d] INFO  c.n.d.s.r.aws.ConfigClusterResolver - Resolving eureka endpoints via configuration
+2026-05-27 00:51:54 [HikariPool-1:housekeeper] WARN  com.zaxxer.hikari.pool.PoolBase - HikariPool-1 - Failed to validate connection com.mysql.cj.jdbc.ConnectionImpl@79ac190e (No operations allowed after connection closed.). Possibly consider using a shorter maxLifetime value.
+2026-05-27 00:52:00 [HikariPool-1:housekeeper] WARN  com.zaxxer.hikari.pool.PoolBase - HikariPool-1 - Failed to validate connection com.mysql.cj.jdbc.ConnectionImpl@31f81884 (No operations allowed after connection closed.). Possibly consider using a shorter maxLifetime value.
+2026-05-27 00:52:10 [HikariPool-1:housekeeper] WARN  com.zaxxer.hikari.pool.PoolBase - HikariPool-1 - Failed to validate connection com.mysql.cj.jdbc.ConnectionImpl@a2fb8a5 (No operations allowed after connection closed.). Possibly consider using a shorter maxLifetime value.
+2026-05-27 00:52:11 [HikariPool-1:housekeeper] WARN  com.zaxxer.hikari.pool.PoolBase - HikariPool-1 - Failed to validate connection com.mysql.cj.jdbc.ConnectionImpl@34f55cfa (No operations allowed after connection closed.). Possibly consider using a shorter maxLifetime value.
+2026-05-27 00:52:38 [HikariPool-1:housekeeper] WARN  com.zaxxer.hikari.pool.PoolBase - HikariPool-1 - Failed to validate connection com.mysql.cj.jdbc.ConnectionImpl@45385ed8 (No operations allowed after connection closed.). Possibly consider using a shorter maxLifetime value.
+2026-05-27 00:52:41 [http-nio-8081-exec-9] WARN  com.zaxxer.hikari.pool.PoolBase - HikariPool-1 - Failed to validate connection com.mysql.cj.jdbc.ConnectionImpl@37551907 (No operations allowed after connection closed.). Possibly consider using a shorter maxLifetime value.
+2026-05-27 00:52:41 [http-nio-8081-exec-9] WARN  com.zaxxer.hikari.pool.PoolBase - HikariPool-1 - Failed to validate connection com.mysql.cj.jdbc.ConnectionImpl@3992e19d (No operations allowed after connection closed.). Possibly consider using a shorter maxLifetime value.
+2026-05-27 00:52:42 [http-nio-8081-exec-9] WARN  com.zaxxer.hikari.pool.PoolBase - HikariPool-1 - Failed to validate connection com.mysql.cj.jdbc.ConnectionImpl@3dad7277 (No operations allowed after connection closed.). Possibly consider using a shorter maxLifetime value.
+2026-05-27 00:52:42 [http-nio-8081-exec-9] WARN  com.zaxxer.hikari.pool.PoolBase - HikariPool-1 - Failed to validate connection com.mysql.cj.jdbc.ConnectionImpl@78afeba6 (No operations allowed after connection closed.). Possibly consider using a shorter maxLifetime value.
+2026-05-27 00:52:42 [http-nio-8081-exec-9] WARN  com.zaxxer.hikari.pool.PoolBase - HikariPool-1 - Failed to validate connection com.mysql.cj.jdbc.ConnectionImpl@67ad4895 (No operations allowed after connection closed.). Possibly consider using a shorter maxLifetime value.
+2026-05-27 00:52:54 [HikariPool-1:connection-adder] WARN  com.zaxxer.hikari.pool.PoolBase - HikariPool-1 - Pool is empty, failed to create/setup connection (c86a7014-3c4f-491b-b692-fecc12f9e93e)
+com.mysql.cj.jdbc.exceptions.CommunicationsException: Communications link failure
+
+The last packet sent successfully to the server was 0 milliseconds ago. The driver has not received any packets from the server.
+	at com.mysql.cj.jdbc.exceptions.SQLError.createCommunicationsException(SQLError.java:165)
+	at com.mysql.cj.jdbc.exceptions.SQLExceptionsMapping.translateException(SQLExceptionsMapping.java:55)
+	at com.mysql.cj.jdbc.ConnectionImpl.createNewIO(ConnectionImpl.java:840)
+	at com.mysql.cj.jdbc.ConnectionImpl.<init>(ConnectionImpl.java:416)
+	at com.mysql.cj.jdbc.ConnectionImpl.getInstance(ConnectionImpl.java:237)
+	at com.mysql.cj.jdbc.NonRegisteringDriver.connect(NonRegisteringDriver.java:180)
+	at com.zaxxer.hikari.util.DriverDataSource.getConnection(DriverDataSource.java:144)
+	at com.zaxxer.hikari.pool.PoolBase.newConnection(PoolBase.java:373)
+	at com.zaxxer.hikari.pool.PoolBase.newPoolEntry(PoolBase.java:210)
+	at com.zaxxer.hikari.pool.HikariPool.createPoolEntry(HikariPool.java:488)
+	at com.zaxxer.hikari.pool.HikariPool$PoolEntryCreator.call(HikariPool.java:752)
+	at com.zaxxer.hikari.pool.HikariPool$PoolEntryCreator.call(HikariPool.java:731)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:317)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1144)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642)
+	at java.base/java.lang.Thread.run(Thread.java:1583)
+Caused by: com.mysql.cj.exceptions.CJCommunicationsException: Communications link failure
+
+The last packet sent successfully to the server was 0 milliseconds ago. The driver has not received any packets from the server.
+	at java.base/jdk.internal.reflect.DirectConstructorHandleAccessor.newInstance(DirectConstructorHandleAccessor.java:62)
+	at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:502)
+	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:486)
+	at com.mysql.cj.exceptions.ExceptionFactory.createException(ExceptionFactory.java:52)
+	at com.mysql.cj.exceptions.ExceptionFactory.createException(ExceptionFactory.java:95)
+	at com.mysql.cj.exceptions.ExceptionFactory.createException(ExceptionFactory.java:140)
+	at com.mysql.cj.exceptions.ExceptionFactory.createCommunicationsException(ExceptionFactory.java:156)
+	at com.mysql.cj.protocol.a.NativeSocketConnection.connect(NativeSocketConnection.java:79)
+	at com.mysql.cj.NativeSession.connect(NativeSession.java:142)
+	at com.mysql.cj.jdbc.ConnectionImpl.connectOneTryOnly(ConnectionImpl.java:964)
+	at com.mysql.cj.jdbc.ConnectionImpl.createNewIO(ConnectionImpl.java:828)
+	... 13 common frames omitted
+Caused by: java.net.ConnectException: Connection refused: getsockopt
+	at java.base/sun.nio.ch.Net.pollConnect(Native Method)
+	at java.base/sun.nio.ch.Net.pollConnectNow(Net.java:682)
+	at java.base/sun.nio.ch.NioSocketImpl.timedFinishConnect(NioSocketImpl.java:542)
+	at java.base/sun.nio.ch.NioSocketImpl.connect(NioSocketImpl.java:592)
+	at java.base/java.net.SocksSocketImpl.connect(SocksSocketImpl.java:327)
+	at java.base/java.net.Socket.connect(Socket.java:751)
+	at com.mysql.cj.protocol.StandardSocketFactory.connect(StandardSocketFactory.java:144)
+	at com.mysql.cj.protocol.a.NativeSocketConnection.connect(NativeSocketConnection.java:53)
+	... 16 common frames omitted
+2026-05-27 00:53:02 [AsyncResolver-bootstrap-executor-%d] INFO  c.n.d.s.r.aws.ConfigClusterResolver - Resolving eureka endpoints via configuration
+2026-05-27 00:56:33 [main] INFO  c.c.u.UsuarioServiceApplication - Starting UsuarioServiceApplication using Java 21.0.2 with PID 11048 (C:\Users\Alexander\OneDrive\Escritorio\CignaProyect-final-v4\CignaProyect-main\usuario-service\usuario-service\target\classes started by Alexander in C:\Users\Alexander\OneDrive\Escritorio\CignaProyect-final-v4\CignaProyect-main\usuario-service\usuario-service)
+2026-05-27 00:56:33 [main] DEBUG c.c.u.UsuarioServiceApplication - Running with Spring Boot v4.0.6, Spring v7.0.7
+2026-05-27 00:56:33 [main] INFO  c.c.u.UsuarioServiceApplication - No active profile set, falling back to 1 default profile: "default"
+2026-05-27 00:56:34 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2026-05-27 00:56:34 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 198 ms. Found 1 JPA repository interface.
+2026-05-27 00:56:35 [main] INFO  o.s.cloud.context.scope.GenericScope - BeanFactory id=a5abd392-e7ce-30ba-aae9-0c6ec51a1703
+2026-05-27 00:56:35 [main] INFO  o.s.boot.tomcat.TomcatWebServer - Tomcat initialized with port 8081 (http)
+2026-05-27 00:56:35 [main] INFO  o.a.catalina.core.StandardService - Starting service [Tomcat]
+2026-05-27 00:56:35 [main] INFO  o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/11.0.21]
+2026-05-27 00:56:36 [main] INFO  o.s.b.w.c.s.WebApplicationContextInitializer - Root WebApplicationContext: initialization completed in 2428 ms
+2026-05-27 00:56:36 [main] INFO  org.hibernate.orm.jpa - HHH008540: Processing PersistenceUnitInfo [name: default]
+2026-05-27 00:56:36 [main] INFO  org.hibernate.orm.core - HHH000001: Hibernate ORM core version 7.2.12.Final
+2026-05-27 00:56:37 [main] INFO  o.s.o.j.p.SpringPersistenceUnitInfo - No LoadTimeWeaver setup: ignoring JPA class transformer
+2026-05-27 00:56:37 [main] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Starting...
+2026-05-27 00:56:37 [main] INFO  com.zaxxer.hikari.pool.HikariPool - HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@3ffa0f38
+2026-05-27 00:56:37 [main] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Start completed.
+2026-05-27 00:56:37 [main] WARN  org.hibernate.orm.core - HHH000511: The 5.5.5 version for [org.hibernate.dialect.MySQLDialect] is no longer supported, hence certain features may not work properly.The minimum supported version is 8.0.0. Check the community dialects project for available legacy versions.
+2026-05-27 00:56:37 [main] INFO  o.hibernate.orm.connections.pooling - HHH10001005: Database info:
+	Database JDBC URL [jdbc:mysql://localhost:3306/cigna_usuarios?createDatabaseIfNotExist=true&useSSL=false&allowPublicKeyRetrieval=true&serverTimezone=America/Santiago]
+	Database driver: MySQL Connector/J
+	Database dialect: MySQLDialect
+	Database version: 5.5.5
+	Default catalog/schema: cigna_usuarios/undefined
+	Autocommit mode: undefined/unknown
+	Isolation level: REPEATABLE_READ [default REPEATABLE_READ]
+	JDBC fetch size: none
+	Pool: DataSourceConnectionProvider
+	Minimum pool size: undefined/unknown
+	Maximum pool size: undefined/unknown
+2026-05-27 00:56:40 [main] INFO  org.hibernate.orm.core - HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2026-05-27 00:56:40 [main] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Initialized JPA EntityManagerFactory for persistence unit 'default'
+2026-05-27 00:56:40 [main] INFO  o.s.d.j.r.q.QueryEnhancerFactories - Hibernate is in classpath; If applicable, HQL parser will be used.
+2026-05-27 00:56:43 [main] INFO  liquibase.changelog - Reading from cigna_usuarios.databasechangelog
+2026-05-27 00:56:43 [main] INFO  liquibase.ui - Database is up to date, no changesets to execute
+2026-05-27 00:56:43 [main] INFO  liquibase.changelog - Reading from cigna_usuarios.databasechangelog
+2026-05-27 00:56:43 [main] INFO  liquibase.util - UPDATE SUMMARY
+2026-05-27 00:56:43 [main] INFO  liquibase.util - Run:                          0
+2026-05-27 00:56:43 [main] INFO  liquibase.util - Previously run:               2
+2026-05-27 00:56:43 [main] INFO  liquibase.util - Filtered out:                 0
+2026-05-27 00:56:43 [main] INFO  liquibase.util - -------------------------------
+2026-05-27 00:56:43 [main] INFO  liquibase.util - Total change sets:            2
+2026-05-27 00:56:43 [main] INFO  liquibase.util - Update summary generated
+2026-05-27 00:56:43 [main] INFO  liquibase.command - Command execution complete
+2026-05-27 00:56:43 [main] WARN  o.s.b.j.a.JpaBaseConfiguration$JpaWebConfiguration - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2026-05-27 00:56:45 [main] INFO  o.s.cloud.commons.util.InetUtils - Cannot determine local hostname
+2026-05-27 00:56:46 [main] INFO  o.s.cloud.commons.util.InetUtils - Cannot determine local hostname
+2026-05-27 00:56:46 [main] INFO  o.s.c.n.e.c.DiscoveryClientOptionalArgsConfiguration - Eureka HTTP Client uses RestClient.
+2026-05-27 00:56:47 [main] WARN  o.s.c.l.c.LoadBalancerCacheAutoConfiguration$LoadBalancerCaffeineWarnLogger - Spring Cloud LoadBalancer is currently working with the default cache. While this cache implementation is useful for development and tests, it's recommended to use Caffeine cache in production.You can switch to using Caffeine cache, by adding it and org.springframework.cache.caffeine.CaffeineCacheManager to the classpath.
+2026-05-27 00:56:47 [main] INFO  o.s.c.n.eureka.InstanceInfoFactory - Setting initial instance status as: STARTING
+2026-05-27 00:56:47 [main] INFO  c.netflix.discovery.DiscoveryClient - Initializing Eureka in region us-east-1
+2026-05-27 00:56:47 [main] INFO  c.n.d.s.r.aws.ConfigClusterResolver - Resolving eureka endpoints via configuration
+2026-05-27 00:56:47 [main] INFO  c.netflix.discovery.DiscoveryClient - Disable delta property : false
+2026-05-27 00:56:47 [main] INFO  c.netflix.discovery.DiscoveryClient - Single vip registry refresh property : null
+2026-05-27 00:56:47 [main] INFO  c.netflix.discovery.DiscoveryClient - Force full registry fetch : false
+2026-05-27 00:56:47 [main] INFO  c.netflix.discovery.DiscoveryClient - Application is null : false
+2026-05-27 00:56:47 [main] INFO  c.netflix.discovery.DiscoveryClient - Registered Applications size is zero : true
+2026-05-27 00:56:47 [main] INFO  c.netflix.discovery.DiscoveryClient - Application version is -1: true
+2026-05-27 00:56:47 [main] INFO  c.netflix.discovery.DiscoveryClient - Getting all instance registry info from the eureka server
+2026-05-27 00:56:47 [main] INFO  c.netflix.discovery.DiscoveryClient - The response status is 200
+2026-05-27 00:56:47 [main] INFO  c.netflix.discovery.DiscoveryClient - Starting heartbeat executor: renew interval is: 30
+2026-05-27 00:56:47 [main] INFO  c.n.discovery.InstanceInfoReplicator - InstanceInfoReplicator onDemand update allowed rate per min is 4
+2026-05-27 00:56:47 [main] INFO  c.netflix.discovery.DiscoveryClient - Discovery Client initialized at timestamp 1779857807872 with initial instances count: 1
+2026-05-27 00:56:47 [main] INFO  o.s.c.n.e.s.EurekaServiceRegistry - Registering application USUARIO-SERVICE with eureka with status UP
+2026-05-27 00:56:47 [main] INFO  c.netflix.discovery.DiscoveryClient - Saw local status change event StatusChangeEvent [timestamp=1779857807881, current=UP, previous=STARTING]
+2026-05-27 00:56:47 [DiscoveryClient-InstanceInfoReplicator-%d] INFO  c.netflix.discovery.DiscoveryClient - DiscoveryClient_USUARIO-SERVICE/localhost:usuario-service:8081: registering service...
+2026-05-27 00:56:47 [main] INFO  o.s.boot.tomcat.TomcatWebServer - Tomcat started on port 8081 (http) with context path '/'
+2026-05-27 00:56:47 [main] INFO  o.s.c.n.e.s.EurekaAutoServiceRegistration - Updating port to 8081
+2026-05-27 00:56:47 [DiscoveryClient-InstanceInfoReplicator-%d] INFO  c.netflix.discovery.DiscoveryClient - DiscoveryClient_USUARIO-SERVICE/localhost:usuario-service:8081 - registration status: 204
+2026-05-27 00:56:48 [main] INFO  o.s.cloud.commons.util.InetUtils - Cannot determine local hostname
+2026-05-27 00:56:49 [main] INFO  c.c.u.UsuarioServiceApplication - Started UsuarioServiceApplication in 17.346 seconds (process running for 18.498)
+2026-05-27 00:57:26 [http-nio-8081-exec-2] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2026-05-27 00:57:26 [http-nio-8081-exec-2] INFO  o.s.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
+2026-05-27 00:57:26 [http-nio-8081-exec-2] INFO  o.s.web.servlet.DispatcherServlet - Completed initialization in 2 ms
+2026-05-27 01:01:47 [AsyncResolver-bootstrap-executor-%d] INFO  c.n.d.s.r.aws.ConfigClusterResolver - Resolving eureka endpoints via configuration
+2026-05-27 01:06:47 [AsyncResolver-bootstrap-executor-%d] INFO  c.n.d.s.r.aws.ConfigClusterResolver - Resolving eureka endpoints via configuration
+2026-05-27 01:11:47 [AsyncResolver-bootstrap-executor-%d] INFO  c.n.d.s.r.aws.ConfigClusterResolver - Resolving eureka endpoints via configuration
+2026-05-27 01:16:47 [AsyncResolver-bootstrap-executor-%d] INFO  c.n.d.s.r.aws.ConfigClusterResolver - Resolving eureka endpoints via configuration
+2026-05-27 01:21:47 [AsyncResolver-bootstrap-executor-%d] INFO  c.n.d.s.r.aws.ConfigClusterResolver - Resolving eureka endpoints via configuration
+2026-05-27 01:26:47 [AsyncResolver-bootstrap-executor-%d] INFO  c.n.d.s.r.aws.ConfigClusterResolver - Resolving eureka endpoints via configuration

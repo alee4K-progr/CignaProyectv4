@@ -1,12 +1,12 @@
-package com.example.historial_service.controller;
+package com.cigna.historial_service.controller;
 
 import static org.mockito.ArgumentMatchers.*;
 import static org.mockito.Mockito.*;
 import static org.springframework.test.web.servlet.request.MockMvcRequestBuilders.*;
 import static org.springframework.test.web.servlet.result.MockMvcResultMatchers.*;
 
-import com.example.historial_service.dto.HistorialClinicoDTO;
-import com.example.historial_service.service.HistorialClinicoService;
+import com.cigna.historial_service.dto.HistorialClinicoDTO;
+import com.cigna.historial_service.service.HistorialClinicoService;
 import com.fasterxml.jackson.databind.ObjectMapper;
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.DisplayName;

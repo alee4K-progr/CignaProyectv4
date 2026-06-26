@@ -1,4 +1,4 @@
-package com.example.historial_service;
+package com.cigna.historial_service;
 
 import org.junit.jupiter.api.Test;
 import org.springframework.boot.test.context.SpringBootTest;

@@ -1,12 +1,12 @@
-package com.example.historial_service.service;
+package com.cigna.historial_service.service;
 
 import static org.junit.jupiter.api.Assertions.*;
 import static org.mockito.ArgumentMatchers.*;
 import static org.mockito.Mockito.*;
 
-import com.example.historial_service.exception.ResourceNotFoundException;
-import com.example.historial_service.model.HistorialClinico;
-import com.example.historial_service.repository.HistorialClinicoRepository;
+import com.cigna.historial_service.exception.ResourceNotFoundException;
+import com.cigna.historial_service.model.HistorialClinico;
+import com.cigna.historial_service.repository.HistorialClinicoRepository;
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
 import org.junit.jupiter.api.extension.ExtendWith;

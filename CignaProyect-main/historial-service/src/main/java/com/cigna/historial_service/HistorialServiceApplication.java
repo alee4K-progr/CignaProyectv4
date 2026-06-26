@@ -1,4 +1,4 @@
-package com.example.historial_service;
+package com.cigna.historial_service;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
